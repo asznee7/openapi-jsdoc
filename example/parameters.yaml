@@ -1,0 +1,6 @@
+components:
+  parameters:
+    - name: id
+      in: path
+      description: User ID
+      required: true

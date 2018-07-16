@@ -1,0 +1,33 @@
+{
+  "name": "openapi-jsdoc",
+  "version": "0.0.1",
+  "description": "Generates OpenAPI doc based on JSDoc",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node example/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dotaxe/openapi-jsdoc.git"
+  },
+  "keywords": [
+    "openapi",
+    "swagger",
+    "jsdoc"
+  ],
+  "author": "https://github.com/dotaxe/openapi-jsdoc/graphs/contributors",
+  "homepage": "https://github.com/dotaxe/openapi-jsdoc",
+  "license": "MIT",
+  "dependencies": {
+    "doctrine": "^2.1.0",
+    "glob": "^7.1.2",
+    "js-yaml": "^3.12.0",
+    "swagger-parser": "^5.0.0"
+  },
+  "devDependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "standard": "^11.0.1"
+  }
+}
