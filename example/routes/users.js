@@ -49,6 +49,9 @@ module.exports.setup = function (app) {
    *           application/json:
    *             schema:
    *               $ref: '#/components/schemas/UserExpanded'
+   *             examples:
+   *               UserExpandedExample:
+   *                 $ref: '#/components/examples/UserExpandedExample'
    *       '404':
    *         description: Not found
    */
@@ -105,4 +108,11 @@ module.exports.setup = function (app) {
  *           properties:
  *             address:
  *               type: string
+ *   examples:
+ *     UserExpandedExample:
+ *        value:
+ *          id: 1
+ *          name: Henry
+ *          address: 8678 East St., Dorchester, MA 02125
+ *        summary: A sample user
  */
