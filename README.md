@@ -3,19 +3,30 @@
 [![Dependencies](https://david-dm.org/dotaxe/openapi-jsdoc.svg)](https://david-dm.org/dotaxe/openapi-jsdoc)
 [![GitHub license](https://img.shields.io/github/license/dotaxe/openapi-jsdoc.svg)](https://github.com/dotaxe/openapi-jsdoc/blob/master/LICENSE)
 
+## Overview
+
 **openapi-jsdoc** parses your OpenAPI (formerly known as Swagger) documentation from your JSDoc code comments.
 
 Heavily inspired by [swagger-jsdoc](https://github.com/Surnet/swagger-jsdoc).
 
-### Supported versions
+#### Supported versions
 * [OpenAPI 3.0](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md)
 
 ## Getting started
 
+To install run
+
+```
+$ npm install openapi-jsdoc
+```
+
+You need to define initial OpenAPI root object in `definition` property. For more detail see [here](https://swagger.io/specification/#oasObject).
+
 `openapi-jsdoc` returns OpenAPI specification in json format.
 
-You can define initial OpenAPI root object in `definition` property. For more detail see [here](https://swagger.io/specification/#oasObject).
 ```javascript
+const openapiJSDoc = require('openapi-jsdoc')
+
 const api = openapiJSDoc({
   definition: {
     // info object, see https://swagger.io/specification/#infoObject
@@ -116,9 +127,9 @@ To use it you can use the following commands:
 
 ```bash
 $ git clone https://github.com/dotaxe/openapi-jsdoc.git
-$ cd swagger-jsdoc
+$ cd openapi-jsdoc
 $ npm install
 $ npm start
 ```
 
-The swagger spec will be served at [http://localhost:3000/api-docs.json](http://localhost:3000/api-docs.json)
+The OpenAPI specification will be served at [http://localhost:3000/api-docs.json](http://localhost:3000/api-docs.json)
